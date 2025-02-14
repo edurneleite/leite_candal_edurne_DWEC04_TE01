@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilo.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+    <title>POKEDEX</title>
+</head>
+<body onload="pintarCarta()">
+    <img id="logoCarta" src="/img/pokemon.png" alt="pokemon logo" height="100px"><br>
+    <div id="carta">
+        <div id="fotoCarta"></div>
+        <div id="infoCarta"></div>
+    </div>
+    <a id="boton" href="basedatos.html"><button>Buscar otra carta Pokemon</button></a>
+
+    <script type="module">
+        import { pintarCarta } from '../js/ajax.js';
+        window.pintarCarta = pintarCarta;
+    </script>
+</body>
